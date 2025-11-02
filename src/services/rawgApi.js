@@ -11,4 +11,4 @@ export const fetchGames = async (searchTerm = 'zelda') => {
     console.error('Erro ao buscar jogos:', error);
     return [];
   }
-};
+}; 
