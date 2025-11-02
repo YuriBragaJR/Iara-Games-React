@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const API_KEY = '504a4441eb3cd24a2b2f66fffbef9e9e'; // substitua pela sua chave
+const API_KEY = import.meta.env.VITE_GNEWS_API_KEY;
 const BASE_URL = 'https://gnews.io/api/v4/search?q=games&lang=pt&token=' + API_KEY;
 
 export const fetchGameNews = async () => {
