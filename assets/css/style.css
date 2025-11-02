@@ -1,0 +1,351 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+html,
+body {
+    width: 100%;
+    height: 100%;
+    font-family: "Poppins", sans-serif;
+}
+
+/* Removendo estilos padrão de listas */
+ul,
+ol {
+    list-style: none;
+}
+
+/* Resetando estilos padrão de links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+p {
+    color: #424242;
+}
+
+/* Garantindo que botões e inputs tenham um estilo mais uniforme */
+button,
+input,
+textarea {
+    border: none;
+    outline: none;
+    background: none;
+    font: inherit;
+}
+
+a {
+    text-decoration: none;
+}
+
+textarea {
+    resize: none;
+}
+
+body {
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: var(--color-11);
+}
+
+hr {
+    border: 0, 1px solid;
+    color: var(--color-06);
+    opacity: 100%;
+    transform: translateY(-20px);
+
+}
+
+/*Variaveis*/
+:root {
+    --color-01: #000000;
+    --color-02: #ffffff;
+    --color-03: #535353;
+    --color-04: #9dff00;
+    --color-05: #568b00;
+    --color-06: rgb(255, 0, 110);
+    --color-07: #8b003c;
+    --color-08: #006eff;
+    --color-09: #003985;
+    --color-10: #020020ab;
+    --color-11: #e6e4fd;
+    --transition: .5s;
+}
+
+/* btn - pré-codificado com paleta de seleção propria */
+.btn-verde {
+    background-color: var(--color-04);
+    transition: var(--transition);
+}
+
+.btn-verde:hover {
+    background-color: var(--color-05);
+    transition: var(--transition);
+}
+
+.btn-rosa {
+    background-color: var(--color-06);
+    transition: var(--transition);
+}
+
+.btn-rosa:hover {
+    background-color: var(--color-07);
+    transition: var(--transition);
+}
+
+.btn-azul {
+    background-color: var(--color-08);
+    transition: var(--transition);
+}
+
+.btn-azul:hover {
+    background-color: var(--color-09);
+    transition: var(--transition);
+}
+
+/* link - pré-codificado com paleta de seleção propria */
+.link-branco {
+    color: var(--color-02);
+}
+
+.link-verde {
+    color: var(--color-04);
+}
+
+.link-rosa {
+    color: var(--color-06);
+}
+
+.link-azul {
+    color: var(--color-08);
+}
+
+/* Hover dos links */
+.hover-cinza:hover {
+    color: var(--color-03);
+}
+
+.hover-verde:hover {
+    color: var(--color-05);
+}
+
+.hover-rosa:hover {
+    color: var(--color-07);
+}
+
+.hover-azul:hover {
+    color: var(--color-09);
+}
+
+
+/* cor - pré-codificado com paleta de seleção propria */
+.cor-verde {
+    color: var(--color-04);
+}
+
+.cor-rosa {
+    color: var(--color-06);
+}
+
+.cor-rosa-e {
+    color: var(--color-07);
+}
+
+.cor-azul {
+    color: var(--color-08);
+}
+
+
+/* bg - pré-codificado com paleta de seleção propria */
+.bg-verde {
+    background-color: var(--color-04);
+}
+
+.bg-rosa {
+    background-color: var(--color-06);
+}
+
+.bg-azul {
+    background-color: var(--color-08);
+}
+
+.bg-preto {
+    background-color: var(--color-01);
+}
+
+.bg-branco {
+    background-color: var(--color-02);
+}
+
+.bg-transparente {
+    background-color: var(--color-10);
+}
+
+/* ---- */
+
+.sombra {
+    text-shadow: 0 0 20px #000000;
+}
+
+.sombra-clara {
+    text-shadow: 0 0 20px #ffffff;
+}
+
+.letter-spacing {
+    letter-spacing: 3px;
+}
+
+.spacing {
+    margin: 220px auto;
+}
+
+.card {
+    box-shadow: 0 5px 30px #3c324456;
+    transition: var(--transition);
+}
+
+.card:hover {
+    box-shadow: 0 15px 15px #34114d56;
+    transition: var(--transition);
+}
+
+/* fonte textos do hero */
+.luckiest-guy-regular {
+    font-family: "Luckiest Guy", cursive;
+    font-weight: 400;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.poppins {
+    font-family: "Poppins", cursive;
+    font-weight: 500;
+    font-style: normal;
+    letter-spacing: 2px;
+}
+
+.roboto {
+    font-family: "Roboto Condensed", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+
+/* corpo do site */
+.hero-bg {
+
+    background: linear-gradient(rgba(141, 8, 97, 0.603), rgba(3, 7, 44, 0.952)), url('../images/iara-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+/* corpo da pagina lista de jogos */
+.jogos-bg {
+    background-color: var(--color-001);
+    background: linear-gradient(rgba(141, 8, 97, 0.603), rgba(3, 7, 44, 0.952)), url('../images/bg-herov5.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+/* corpo da pagina lista de jogos */
+.cart-bg {
+    background-color: var(--color-001);
+    background: linear-gradient(rgba(141, 8, 97, 0.603), rgba(3, 7, 44, 0.952)), url('../images/cart-bg.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+}
+
+.cart-container {
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.cart-link {
+    text-decoration: none;
+    color: inherit;
+    position: relative;
+}
+
+.cart-count {
+    position: absolute;
+    top: -8px;
+    right: -12px;
+    background-color: var(--color-07);
+    color: white;
+    border-radius: 50%;
+    padding: 2px 6px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+#rede-social {
+    font-size: 5vmin;
+    transition: 0.5s;
+    color: var(--color-003);
+}
+
+#rede-social:hover {
+    color: var(--color-008);
+    text-shadow: 0px 0px 2px var(--color-008);
+    transition: var(--transition);
+}
+
+
+.disconto {
+    background-color: var(--color-04);
+    border-radius: 5px;
+}
+
+.valor-antigo {
+    text-decoration: line-through;
+}
+
+
+.campo-jogo {
+    height: 100px;
+    overflow: hidden;
+}
+
+.sombra-texto {
+    text-shadow: 0 0 2px hsl(0, 0%, 100%);
+    padding: 0 20px;
+    font-weight: 600;
+    color: #181818;
+    font-size: 1.3rem;
+    background-color: #ffffff6b;
+    border-radius: 30px;
+}
+
+.iara-games {
+    color: var(--color-02);
+}
+
+footer {
+    background-color: var(--color-01);
+}
+
+
+@media (min-width: 768px) {
+    .titulo-hero {
+        width: 55%;
+    }
+
+    .texto-hero {
+        width: 50%;
+    }
+
+    .card-jogo {
+        width: 260px;
+    }
+}
